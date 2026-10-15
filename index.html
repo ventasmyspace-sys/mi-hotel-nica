@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f6f1">
+  <meta name="description" content="Nácar Hotel: un refugio boutique entre el Pacífico y la naturaleza de San Juan del Sur, Nicaragua.">
+  <title>Nácar Hotel — Tu refugio frente al Pacífico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Nácar Hotel, inicio">
+      <span class="brand-mark" aria-hidden="true">N</span>
+      <span>NÁCAR<span class="brand-subtitle">HOTEL BOUTIQUE</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#habitaciones">Habitaciones</a>
+      <a href="#experiencias">Experiencias</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <a class="nav-booking" href="#reservar">Reservar <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=2200&q=85" alt="Piscina de un hotel tropical rodeada de palmeras">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light-eyebrow"><span></span> SAN JUAN DEL SUR · NICARAGUA</p>
+        <h1>El Pacífico<br>marca el <em>ritmo.</em></h1>
+        <p class="hero-copy">Días sin prisa, sabor local y atardeceres que se quedan contigo.</p>
+        <a class="button button-light" href="#habitaciones">Descubre Nácar <span aria-hidden="true">↗</span></a>
+      </div>
+      <a class="hero-pinterest" href="https://www.pinterest.com/search/pins/?q=tropical%20boutique%20hotel%20pool" target="_blank" rel="noreferrer">Inspiración visual en Pinterest ↗</a>
+      <div class="hero-bottom"><span>11°15' N&nbsp; 85°52' O</span><span>DESLIZA PARA EXPLORAR ↓</span></div>
+    </section>
+
+    <section class="booking-wrap" id="reservar" aria-labelledby="booking-title">
+      <form class="booking-bar" id="booking-form">
+        <div class="booking-heading">
+          <span class="eyebrow">TU ESCAPADA</span>
+          <h2 id="booking-title">Encuentra tu fecha</h2>
+        </div>
+        <label class="booking-field">
+          <span>Entrada</span>
+          <input id="checkin" name="checkin" type="date" required>
+        </label>
+        <label class="booking-field">
+          <span>Salida</span>
+          <input id="checkout" name="checkout" type="date" required>
+        </label>
+        <label class="booking-field guests-field">
+          <span>Huéspedes</span>
+          <select name="guests" aria-label="Cantidad de huéspedes">
+            <option value="1">1 huésped</option>
+            <option value="2" selected>2 huéspedes</option>
+            <option value="3">3 huéspedes</option>
+            <option value="4">4 huéspedes</option>
+            <option value="5">5 huéspedes</option>
+            <option value="6">6 huéspedes</option>
+          </select>
+        </label>
+        <button class="button button-dark" type="submit">Consultar <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="booking-note" id="booking-message" aria-live="polite">Mejor tarifa reservando directamente · Respuesta personalizada en menos de 24 h</p>
+    </section>
+
+    <section class="intro section-pad">
+      <div class="intro-label"><span class="eyebrow">UN LUGAR PARA VOLVER A TI</span><span class="intro-number">01 / 04</span></div>
+      <div class="intro-content">
+        <h2>La belleza de<br>no tener <em>prisa.</em></h2>
+        <div class="intro-aside">
+          <p>Entre el verde de la costa y el azul infinito, creamos un refugio íntimo para quienes buscan viajar más despacio. Aquí, cada detalle celebra la calidez nicaragüense.</p>
+          <a class="text-link" href="#experiencias">Conoce nuestra esencia <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="intro-stats">
+        <div><strong>12</strong><span>habitaciones únicas</span></div>
+        <div><strong>5 min</strong><span>de la playa</span></div>
+        <div><strong>100%</strong><span>calidez local</span></div>
+      </div>
+    </section>
+
+    <section class="rooms section-pad" id="habitaciones">
+      <div class="section-heading">
+        <div><p class="eyebrow">DESCANSO CON CARÁCTER</p><h2>Tu rincón en <em>Nácar.</em></h2></div>
+        <p>Materiales naturales, luz suave y espacio para respirar. Elige el refugio que va contigo.</p>
+      </div>
+      <div class="room-grid">
+        <article class="room-card">
+          <a class="image-link" href="https://www.pinterest.com/search/pins/?q=coastal%20hotel%20room%20natural%20textures" target="_blank" rel="noreferrer" aria-label="Ver inspiración de habitaciones en Pinterest">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1100&q=85" alt="Habitación luminosa con cama amplia y decoración natural" loading="lazy">
+            <span class="image-tag">MÁS ELEGIDA</span><span class="pin-label">Ver en Pinterest ↗</span>
+          </a>
+          <div class="room-info"><div><span class="eyebrow">HASTA 2 PERSONAS</span><h3>Suite Brisa</h3></div><p>Desde <strong>$145</strong><span> / noche</span></p></div>
+          <p class="room-description">Cama king · Terraza privada · Vista al jardín</p>
+        </article>
+        <article class="room-card">
+          <a class="image-link" href="https://www.pinterest.com/search/pins/?q=private%20pool%20hotel%20suite%20tropical" target="_blank" rel="noreferrer" aria-label="Ver inspiración de suites con piscina en Pinterest">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1100&q=85" alt="Suite boutique con tonos cálidos y diseño cuidado" loading="lazy">
+            <span class="pin-label">Ver en Pinterest ↗</span>
+          </a>
+          <div class="room-info"><div><span class="eyebrow">HASTA 3 PERSONAS</span><h3>Suite Marea</h3></div><p>Desde <strong>$195</strong><span> / noche</span></p></div>
+          <p class="room-description">Cama king · Sala lounge · Ducha exterior</p>
+        </article>
+        <article class="room-card">
+          <a class="image-link" href="https://www.pinterest.com/search/pins/?q=family%20villa%20tropical%20boutique%20hotel" target="_blank" rel="noreferrer" aria-label="Ver inspiración de villas tropicales en Pinterest">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85" alt="Villa de diseño abierto rodeada de vegetación tropical" loading="lazy">
+            <span class="pin-label">Ver en Pinterest ↗</span>
+          </a>
+          <div class="room-info"><div><span class="eyebrow">HASTA 4 PERSONAS</span><h3>Casa Coral</h3></div><p>Desde <strong>$260</strong><span> / noche</span></p></div>
+          <p class="room-description">Dos habitaciones · Terraza · Cocina equipada</p>
+        </article>
+      </div>
+      <p class="rates-note">Tarifas orientativas en USD por noche. Impuestos y disponibilidad se confirman al consultar.</p>
+    </section>
+
+    <section class="experience section-pad" id="experiencias">
+      <div class="experience-image">
+        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1400&q=85" alt="Olas suaves llegando a una playa tropical al atardecer" loading="lazy">
+        <a href="https://www.pinterest.com/search/pins/?q=nicaragua%20pacific%20coast%20sunset%20beach" target="_blank" rel="noreferrer" class="experience-pin">Inspírate en Pinterest ↗</a>
+      </div>
+      <div class="experience-copy">
+        <p class="eyebrow">MÁS QUE UNA ESTADÍA</p>
+        <h2>El lujo está<br>en <em>sentir.</em></h2>
+        <p>Despierta con el sonido del mar, saborea ingredientes de la zona y deja que nuestro equipo te muestre el lado más auténtico de la costa.</p>
+        <ul class="amenity-list">
+          <li><span>01</span> Piscina al aire libre y solárium</li>
+          <li><span>02</span> Restaurante de cocina local</li>
+          <li><span>03</span> Masajes y bienestar bajo reserva</li>
+          <li><span>04</span> Wi-Fi de cortesía en todo el hotel</li>
+          <li><span>05</span> Traslados y tours disponibles</li>
+        </ul>
+        <a class="text-link" href="#contacto">Planea tu experiencia <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="gallery section-pad" id="galeria">
+      <div class="section-heading gallery-heading">
+        <div><p class="eyebrow">UN VISTAZO A NÁCAR</p><h2>Pequeños momentos,<br><em>grandes recuerdos.</em></h2></div>
+        <a class="text-link" href="https://www.pinterest.com/search/pins/?q=hotel%20boutique%20nicaragua%20tropical" target="_blank" rel="noreferrer">Más inspiración en Pinterest <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="gallery-grid">
+        <a href="https://www.pinterest.com/search/pins/?q=tropical%20hotel%20pool%20design" target="_blank" rel="noreferrer" aria-label="Inspiración de piscina en Pinterest"><img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1000&q=85" alt="Piscina turquesa entre vegetación" loading="lazy"><span>AGUA Y CALMA ↗</span></a>
+        <a href="https://www.pinterest.com/search/pins/?q=hotel%20breakfast%20tropical%20fruit" target="_blank" rel="noreferrer" aria-label="Inspiración de desayuno tropical en Pinterest"><img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1000&q=85" alt="Desayuno tropical fresco servido en mesa" loading="lazy"><span>SABORES LOCALES ↗</span></a>
+        <a href="https://www.pinterest.com/search/pins/?q=beach%20sunset%20nicaragua" target="_blank" rel="noreferrer" aria-label="Inspiración de atardecer de playa en Pinterest"><img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1000&q=85" alt="Atardecer dorado sobre una playa tranquila" loading="lazy"><span>EL ÚLTIMO SOL ↗</span></a>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <span class="quote-mark" aria-hidden="true">“</span>
+      <blockquote>Un lugar que se siente como descubrir un secreto y querer compartirlo con nadie.</blockquote>
+      <p>— SOFÍA & MARCOS · COSTA RICA</p>
+      <div class="review-score"><span>★★★★★</span> 4.9 / 5 · Opiniones de huéspedes</div>
+    </section>
+
+    <section class="contact section-pad" id="contacto">
+      <div><p class="eyebrow">AQUÍ EMPIEZA TU VIAJE</p><h2>¿Nos vemos<br>junto al <em>mar?</em></h2></div>
+      <div class="contact-details">
+        <p>Cuéntanos qué tienes en mente. Te ayudamos a organizar una estadía a tu medida.</p>
+        <a class="contact-link" href="mailto:hola@nacarhotel.com">hola@nacarhotel.com <span>↗</span></a>
+        <a class="contact-link" href="https://wa.me/50588880000" target="_blank" rel="noreferrer">WhatsApp · +505 8888 0000 <span>↗</span></a>
+        <p class="contact-address">San Juan del Sur, Rivas<br>Nicaragua · Check-in 15:00 · Check-out 11:00</p>
+        <a class="button button-dark" href="#reservar">Consultar disponibilidad <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">N</span><span>NÁCAR<span class="brand-subtitle">HOTEL BOUTIQUE</span></span></a>
+    <p>Un refugio junto al Pacífico · Nicaragua</p>
+    <span>© <span id="year"></span> Nácar Hotel</span>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
